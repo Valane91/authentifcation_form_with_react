@@ -1,0 +1,49 @@
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: translateX(100%);
+  z-index: 4;
+}
+
+.message:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70%;
+  background: #C3C3D8;
+  opacity: 0;
+  left: 0;
+  top: 15%;
+}
+
+.message .button {
+  margin: 5px 0;
+}
+  
+.signup:before {
+  opacity: 0.3;
+  left: 0;
+}
+
+.signup {
+  transform: translateX(100%);
+}
+
+.login:before {
+  opacity: 0.3;
+  left: 100%;
+}
+
+.login {
+  transform: translateX(0%);
+}

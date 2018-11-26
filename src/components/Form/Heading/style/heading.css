@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+
+.form--heading {
+    font-size: 18px;
+    height: 50px;
+    color: #809BCE;
+    font-family: "Playfair Display", serif;
+}
