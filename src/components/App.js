@@ -22,6 +22,8 @@ class App extends React.Component {
         this.handleToggleBtnClick = this.handleToggleBtnClick.bind(this);
     }
 
+
+    
     handleToggleBtnClick(toggle) {
 
 
@@ -33,8 +35,6 @@ class App extends React.Component {
                 }
             );    
         
-            console.log(toggle);
-
         } else if(toggle === 'signup' && this.state.isSignupToggle === false) {
         
             this.setState(
@@ -42,14 +42,13 @@ class App extends React.Component {
                     isSignupToggle: true 
                 }
             );    
-            
-            console.log(toggle);
+        
         } 
     }
 
 
     render() {
-        
+
         return (
             <div className="container">
                 
